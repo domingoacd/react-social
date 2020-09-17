@@ -8,10 +8,15 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   
+  @font-face {
+    font-family: Roboto ;
+    src: url(../../fonts/roboto/Roboto-Regular.ttf);
+  }
   body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Roboto, sans-serif;
     background-color: ${props => props.theme.colors.main};
   }
 `;

@@ -3,7 +3,10 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors : {
-    main: '#24253F'
+    main: '#24253F',
+    gray: '#C4C4C4',
+    textPrimary: '#fff',
+    textSecondary: '#929292'
   }
 };
 const Theme = ({ children }) => {
