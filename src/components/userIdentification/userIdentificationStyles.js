@@ -4,7 +4,7 @@ export const IdWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  
 `;
 
 export const UserPic = styled.img`
