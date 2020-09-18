@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const PostWrapper = styled.div`
+  position: relative;  
   width: 100%;
   max-width: 40rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  overflow: hidden;
   border: 1px solid ${props => props.theme.colors.gray};
 `;
 

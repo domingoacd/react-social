@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
   colors : {
     main: '#24253F',
+    secondary: '#00BB78',
     gray: '#C4C4C4',
     textPrimary: '#fff',
     textSecondary: '#929292'

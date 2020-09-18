@@ -6,6 +6,7 @@ const MainContainer = styled.div`
   max-width: 50rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 `;
 
