@@ -8,6 +8,9 @@ const theme = {
     gray: '#C4C4C4',
     textPrimary: '#fff',
     textSecondary: '#929292'
+  },
+  layout: {
+    navHeight: '5rem'
   }
 };
 const Theme = ({ children }) => {
