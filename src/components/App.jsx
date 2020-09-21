@@ -1,17 +1,23 @@
 import React from 'react';
 import MainContainer from './containers/MainContainer';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Theme from './theme/Theme';
 import GlobalStyles from './theme/GlobalStyles';
-import Home from './home/Home';
-import styled from 'styled-components';
+import Profile from '../pages/profile/Profile';
+import Home from '../pages/home/Home';
 
 const App = () => {
   return(
     <Theme>
       <GlobalStyles />
-        <MainContainer>
-          <Home />
-        </MainContainer>
+        <BrowserRouter>
+          <MainContainer>
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/profile" component={Profile}/>
+            </Switch>
+          </MainContainer>
+        </BrowserRouter>
     </Theme>
   );
 }
