@@ -1,9 +1,10 @@
 import React from 'react';
 import { IdWrapper, UserPic, RightSide, UserName, UserHash } from './userIdentificationStyles';
 import img from '../../images/user_picture.png';
-const UserIdentification = () => {
+const UserIdentification = (props) => {
+  
   return(
-    <IdWrapper>
+    <IdWrapper isProfile={props.isProfilePage}>
       <UserPic src={img} />
       <RightSide>
         <UserName>Jhon Doe</UserName>

@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: Roboto, sans-serif;
     background-color: ${props => props.theme.colors.main};
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyles;
