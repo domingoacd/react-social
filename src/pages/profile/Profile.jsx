@@ -14,8 +14,8 @@ const Profile = () => {
       </UserDescription>
       <ProfileTopMenu>
         <TopMenuItem active><a href="#">Posts</a></TopMenuItem>
-        <TopMenuItem><a href="/about">About me</a></TopMenuItem>
-        <TopMenuItem><a href="/likes">Likes</a></TopMenuItem>
+        <TopMenuItem><a href="#">About me</a></TopMenuItem>
+        <TopMenuItem><a href="#">Likes</a></TopMenuItem>
       </ProfileTopMenu>
       
     </React.Fragment>
