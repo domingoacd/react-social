@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Nav from '../../components/nav/Nav';
+import Nav from '../../components/nav/Nav.jsx';
 
 const MainContainer = styled.div`
   width: 95vw;
@@ -16,7 +16,7 @@ const MainContainerComponent = ({children}) => {
   return(
     <MainContainer>
       {children}
-      <Nav />
+      {/* <Nav /> */}
     </MainContainer>
   );
 }
