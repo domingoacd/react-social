@@ -1,6 +1,6 @@
 import React from 'react';
 import MainContainer from './containers/MainContainer.jsx';
-import { StaticRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Theme from './theme/Theme';
 import GlobalStyles from './theme/GlobalStyles';
 import Settings from '../pages/settings/Settings';
@@ -11,7 +11,7 @@ const App = () => {
   return(
     <Theme>
       <GlobalStyles />
-        {/* <StaticRouter>
+        {/* <BrowserRouter> */}
           <MainContainer>
             <Switch>
               <Route exact path="/" component={Home}/>
@@ -19,10 +19,7 @@ const App = () => {
               <Route path="/settings" component={Settings}/>
             </Switch>
           </MainContainer>
-        </StaticRouter> */}
-      <MainContainer>
-        <Home />
-      </MainContainer>
+        {/* </BrowserRouter> */}
     </Theme>
   );
 }

@@ -16,7 +16,7 @@ const MainContainerComponent = ({children}) => {
   return(
     <MainContainer>
       {children}
-      {/* <Nav /> */}
+      <Nav />
     </MainContainer>
   );
 }
