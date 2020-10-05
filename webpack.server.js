@@ -2,7 +2,7 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  entry: './src/server/index.js',
+  entry: './index.js',
 
   target: 'node',
 
@@ -34,5 +34,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx']
+  },
+  node: {
+    __dirname: false
   }
 };

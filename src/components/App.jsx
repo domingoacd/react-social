@@ -11,7 +11,7 @@ const App = () => {
   return(
     <Theme>
       <GlobalStyles />
-        {/* <BrowserRouter> */}
+        <BrowserRouter>
           <MainContainer>
             <Switch>
               <Route exact path="/" component={Home}/>
@@ -19,7 +19,7 @@ const App = () => {
               <Route path="/settings" component={Settings}/>
             </Switch>
           </MainContainer>
-        {/* </BrowserRouter> */}
+        </BrowserRouter>
     </Theme>
   );
 }
