@@ -2,8 +2,12 @@ import React from 'react';
 import {Button} from './postButtonStyles';
 
 const PostButton = () => {
+  function change() {
+    console.log('clicked');
+  }
+
   return(
-    <Button>+</Button>
+    <Button onClick={change}>+</Button>
   );
 }
 

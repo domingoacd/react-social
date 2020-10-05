@@ -7,9 +7,11 @@ const html = (body, styles, title ) => {
         ${styles}
       </head>
       <body>
+        <div id="root">
         ${body}
+        </div>
       </body>
-    </html>`
+    </html>`;
   
 }
 

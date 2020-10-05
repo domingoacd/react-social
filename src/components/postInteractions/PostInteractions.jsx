@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   InteractionsWrapper, 
   Interaction, 
@@ -7,13 +7,22 @@ import {
   from './postInteractionsStyles';
 import likes from '../../images/like.png';
 import comments from '../../images/comment.png';
+import handler from '../../server/increase.js';
 
 const PostInteractions = () => {
+  const [likesAmmount, increaseLikes] = useState(0);
+
+  const  increment = ()  => {
+    console.log("jejeje")
+    console.log(handler("INCREMENT", likesAmmount));
+    increaseLikes(handler("INCREMENT", likesAmmount));
+  }
+
   return(
-    <InteractionsWrapper>
+    <InteractionsWrapper onClick={increment}>
       <Interaction>
         <InteractionImage src={likes}/>
-        <InteractionAmmount>3</InteractionAmmount>
+        <InteractionAmmount>{likesAmmount}</InteractionAmmount>
       </Interaction>
       <Interaction>
         <InteractionImage src={comments}/>
